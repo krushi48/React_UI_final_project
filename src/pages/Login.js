@@ -1,11 +1,12 @@
-import React,{useState,useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+// import {Link} from 'react-router-dom';
+import dbs from '../db.json';
 
-export default function Login() { 
-    let loginUrl="http://localhost:3000/login"
-    let [logIn,setlogIn]=useState([])
+export default function Login() {
+    let loginUrl = "http://localhost:3000/login"
+    let [logIn, setlogIn] = useState([])
 
-    async function getLoggedIn(){
+    async function getLoggedIn() {
         let response = await fetch(loginUrl);
         let result = await response.json();
         console.log(result);
@@ -13,15 +14,22 @@ export default function Login() {
 
     }
 
-    useEffect(()=>{
-     getLoggedIn();
-    },[])
-     
-  return (
+    useEffect(() => {
+        getLoggedIn();
+    }, [])
+
+    return (
 
 
-    <div>
-        
-    </div>
-  )
+        <div>
+            {dbs.login.map((db) => {
+                return (
+                    <div>
+                       <h1>{db.username}</h1> 
+                    </div>
+                )
+            })}
+            
+        </div>
+    )
 }
