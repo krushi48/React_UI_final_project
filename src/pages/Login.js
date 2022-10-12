@@ -1,35 +1,95 @@
 import React, { useState, useEffect } from 'react';
-// import {Link} from 'react-router-dom';
-import dbs from '../db.json';
+import AppContext from '../Context/AppContext/AppContext';
 
-export default function Login() {
+
+export default function Login(props) {
     let loginUrl = "http://localhost:3000/login"
-    let [logIn, setlogIn] = useState([])
 
-    async function getLoggedIn() {
+
+    let [user, setUser] = useState([])
+    let [password, setPassword] = useState([])
+    let [newPassword, setNewPassword] = useState("")
+    let [newUser, setNewUser] = useState("")
+
+    let getUserDetails = async () => {
         let response = await fetch(loginUrl);
-        let result = await response.json();
-        console.log(result);
-        setlogIn(result);
+        let data = await response.json();
+        console.log(data);
+        setUser(data);
+        setPassword(data);
+
+
+    }
+    useEffect(() => {
+
+        getUserDetails();
+    }, [])
+
+
+
+    let addUser = async (event) => {
+        event.preventDefault();
+        console.log("adding new todos", newUser);
+        let UserToAdd = {
+            "username": newUser,
+            "password": newPassword
+        }
+        let response = await fetch(loginUrl, {
+            method: "POST",
+            body: JSON.stringify(UserToAdd),
+            headers: {
+                "Content-Type": "application/json"
+            },
+        })
+        let data = await response.json();
+        console.log(data);
+        setNewUser("")
+        setNewPassword("")
+        getUserDetails();
 
     }
 
-    useEffect(() => {
-        getLoggedIn();
-    }, [])
+    // function checkLogin(){
+    //     if((newUser === AppContext.db.storedusername)&(newPassword===AppContext.db.storedpassword)){
+    //         alert("Login successful")
+    //         AppContext.setUserLoggedIn(true)
+    //     }
+    // }
+
 
     return (
 
 
         <div>
-            {dbs.login.map((db) => {
+
+            <form  onSubmit={addUser} >
+                <label>name: </label>
+                <input type="text" value={newUser} onChange={event => { setNewUser(event.target.value) }}></input>
+
+                <label>password: </label>
+                <input onChange={event => { setNewPassword(event.target.value) }}></input>
+
+                <button
+{/*onClick={() => {
+                            AppContext.addUserToJson(props.login)
+                        }}*/}
+                >Submit</button>
+
+            </form>
+            {user.map((login) => {
                 return (
-                    <div>
-                       <h1>{db.username}</h1> 
-                    </div>
+                    <UserDetails login={login} key={login.id} />
                 )
             })}
-            
+
         </div>
+    )
+}
+
+function UserDetails(props) {
+    return (
+        <>{props.login.username}
+            <br />
+        </>
     )
 }
