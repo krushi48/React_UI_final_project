@@ -1,0 +1,55 @@
+{
+  "blogs": [
+    {
+      "title": "Hampi",
+      "body": "<p>Hampi is a UNESCO World Heritage Site in India located near Hospet town in the Karnataka state, India.</p><p>Among the attractions of Hampi are beautiful temples, ruins&nbsp;of palaces, remains of aquatic structures, ancient market streets, royal pavilions, bastions, royal platforms, treasury buildings... the list is practically endless. Hampi is a backpacker's paradise, the same way a pilgrim's delight.</p>",
+      "category": "travel",
+      "image": "https://im.whatshot.in/img/2018/Jun/shutterstock-389541127-cropped-1528464078.jpg",
+      "date": "17/10/2022",
+      "id": 12
+    },
+    {
+      "title": "Benne Dosa",
+      "body": "<p>Davangere is a city in central Karna</p>",
+      "category": "food",
+      "image": "https://www.mistay.in/travel-blog/content/images/2020/07/Benne-dosa.jpg",
+      "date": "17/10/2022",
+      "id": 14
+    },
+    {
+      "title": "Emo Robot",
+      "body": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(36, 36, 36);\">&nbsp;It is a high-performance version of the EV6, which combines a high-performance motor with a high-power battery, achieving the highest level of power performance ever. In addition, the front monoblock 4 piston caliper is applied that improved size/performance compared to the basic model.</span></p>",
+      "category": "tech",
+      "image": "https://i.ytimg.com/vi/NlzM48WoYh4/hqdefault.jpg",
+      "date": "17/10/2022",
+      "id": 15
+    },
+    {
+      "title": "KIA EV6",
+      "category": "tech",
+      "date": "17/10/2022",
+      "likes": 0,
+      "body": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(17, 21, 22);\">The South Korean brand sells one of the most exciting and fast-selling EVs: the&nbsp;</span><a href=\"https://www.businessinsider.com/kia-ev6-electric-car-suv-review-gt-line-2022-4\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); color: rgb(24, 95, 125);\">EV6 SUV</a><span style=\"background-color: rgb(255, 255, 255); color: rgb(17, 21, 22);\">. It's sporty, sleekly styled, and excels in the all-important range department.</span></p>",
+      "image": "https://2021electriccars.com/wp-content/uploads/2021/04/2022-Kia-EV6-GT-price.jpg",
+      "id": 16
+    },
+    {
+      "title": "Shitzu",
+      "category": "pets",
+      "date": "17/10/2022",
+      "likes": 0,
+      "body": "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(17, 17, 17);\">Shih Tzu means</span><strong style=\"background-color: rgb(255, 255, 255); color: rgb(17, 17, 17);\">&nbsp;lion</strong><span style=\"background-color: rgb(255, 255, 255); color: rgb(17, 17, 17);\">, and in Buddhist belief, there is an association between the lion and their Deity; thus, the dogs were bred in court. The Shih Tzu was the house pet for most of the Ming Dynasty.</span></p>",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https:%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F03%2Fshih-tzu-tongue-out-467451796-2000.jpg",
+      "id": 17
+    },
+    {
+      "title": "Husky",
+      "category": "",
+      "date": "17/10/2022",
+      "likes": 0,
+      "body": "<p><a href=\"https://www.bing.com/ck/a?!&amp;&amp;p=078079b943059753JmltdHM9MTY2NTg3ODQwMCZpZ3VpZD0wNjNmNTRhMy1kYzBhLTY3NzgtMDU1My00NmI5ZGRhMjY2M2UmaW5zaWQ9NTcyNw&amp;ptn=3&amp;hsh=3&amp;fclid=063f54a3-dc0a-6778-0553-46b9dda2663e&amp;psq=husky+puppies&amp;u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU2liZXJpYW5fSHVza3kjTGluZWFnZQ&amp;ntb=1\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(238, 242, 247); color: rgb(96, 0, 144);\">They were originally bred by the Chukchi people of the Chukchi Peninsula in eastern Siberia.</a></p><p><br></p>",
+      "image": "https://tse3.mm.bing.net/th/id/OIP.UNslYFI53EQyvIqUx99xTgHaFj?pid=ImgDet&rs=1",
+      "id": 18
+    }
+  ]
+}
