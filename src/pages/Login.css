@@ -1,0 +1,131 @@
+
+  
+  
+  .login_container{
+    margin: auto;
+    width: 850px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #0ff;
+    
+   
+    
+    margin-top: 5rem;
+    border-radius: 10px;
+  }
+  
+  .login_container{
+    background-image: url('../images/neon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .login-form{
+    float: right;
+    width: 260px;
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  
+  
+  .login-form{
+  
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .user{
+    margin-top: 70px;
+    
+    cursor: pointer;
+  
+  }
+  
+  .user h1{
+    
+    font-size: 22px;
+    font-weight: 200;
+  }
+  
+  .user p{
+    font-weight: bolder;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  .login_input-feld{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    background-color: #fff;
+    cursor: pointer;
+  
+  }
+  
+  .login_input-feld label{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-bottom: -2rem;
+    cursor: pointer;
+  }
+  
+  
+ .login_input-feld input{
+    width: 200px;
+    height: 35px;
+   
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    text-align: center;
+    padding-top: 8px;
+    font-weight: bolder;
+    color: #181c1f;
+    border-color: black;
+    margin: 25px;
+  
+  
+  }
+  
+  
+  .login_input-feld button{
+    width: 150px;
+    height: 50px;
+    background-color: #181c1f;
+    border: 1px solid #0ff;
+    border-radius: 5px;
+    color: #0ff;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+ .login_input-feld button:hover{
+    transform: scale(1.1);
+  }
+  
+ .login_input-feld a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-top: 15px;
+    text-decoration: none;
+   
+  }
+  
+  .login_input-feld a:hover{
+    text-decoration: underline;
+  }
