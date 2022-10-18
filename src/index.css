@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Ubuntu:wght@500&display=swap');
+
+.editor{
+    background-image: url('./images/editor6.jpg');
+    background-repeat: no-repeat;
+   background-size: cover;
+    
+   
+   
+}
+
+.hide{
+    display:none;
+}
+
+.home:hover + .hide{
+    display: block;
+    color: red;
+}
+
+.admin_body{
+    background: url('./images/admin7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.edit_button{
+   
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.button1 {
+    background-color: transparent;
+    border: 3px solid #00d7c3;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #00d7c3;
+  }
+  .button1:hover {
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #fff;
+  }
+
+  .button2 {
+    background-color: transparent;
+    border: 3px solid #ff073a;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #ff073a;
+  }
+  .button2:hover {
+    box-shadow: 0 0 10px 0 #ff073a inset, 0 0 20px 2px #ff073a;
+    border: 3px solid #fff;
+  }
+
+
+
+   .hd_ul {
+   margin-top: 30px;
+   margin-right: -150px;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    
+    float: right;
+    transform: translate(-50%, -50%);
+  }
+  
+ .hd_ul .hd_li {
+    list-style: none;
+    margin: 0 15px;
+  }
+  
+  .hd_ul .hd_li  {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: rgb(34 211 238);
+    transition: .5s;
+  }
+  
+  .hd_ul .hd_li ::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #FB48C4;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .hd_ul .hd_li :hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #FB48C4;
+  }
+  
+  .hd_ul .hd_li :hover {
+    color: rgb(34 211 238);
+    /* box-shadow: 0 0 5px #ffee10; */
+    text-shadow: 0 0 5px rgb(34 211 238);
+  }
+
+  .card{
+    font-family:'Ubuntu', sans-serif;
+    
+  }
+
+  .home_card{
+    background: url('./images/home3.jfif')
+  }
+
+  .single_blog{
+   background: linear-gradient(#545AA7 , #454B98 , #363C89 , #6369B6 );
+    background-repeat: no-repeat;
+  }
+
+  .tubeligt{
+    position: relative;
+  font-size: 6em;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+  line-height: 0.703m;
+
+  outline: none;
+  animation: animate 5s linear infinite;
+  }
+
+  @keyframes animate
+{
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%,20.1%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4,
+    0 0 160px #03bcf4;
+  }
+}
